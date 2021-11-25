@@ -1,0 +1,99 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main {
+    width: 60%;
+    margin: 1.2rem auto;
+}
+
+.task-input {
+    background-color: var(--color-grey-bold);
+    padding: 1.4rem;
+    border-radius: 5px;
+}
+
+.tasks {
+    margin-top: 1.2rem;
+}
+
+.card-task {
+    background-color: var(--color-grey-bold);
+    color: var(--color-light);
+    padding: 1.4rem;
+    border-radius: 5px;
+    margin: 1.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-task .card-del a {
+    color: var(--color-light);
+    padding: .9rem 1.6rem;
+    border-radius: 5px;
+}
+
+.card-task .card-del a:hover {
+    background-color: var(--color-danger);
+}
+
+.form-task {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.card-text {
+    color: var(--color-light);
+}
+
+.title-input {
+    font-family: var(--font-sec);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card-actions {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.card-link {
+    font-size: 1.5rem;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+}
+
+.card-exclamation {
+    color: var(--color-danger);
+}
+
+.card-check {
+    color: var(--color-success);
+}
+
+.card-exclamation:hover {
+    color: var(--color-light);
+    background-color: var(--color-danger);
+}
+
+.card-check:hover {
+    color: var(--color-light);
+    background-color: var(--color-success);
+}
+
+.card-exclamation  :first-child {
+    color: currentColor;
+    padding: .9rem;
+}
+
+.card-check :first-child {
+    color: currentColor;
+    padding: .9rem;
+}

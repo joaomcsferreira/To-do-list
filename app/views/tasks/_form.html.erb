@@ -1,0 +1,10 @@
+<%= form_with model: @task do |form| %>
+
+  <div class="field">
+    <%= form.text_area :body, :class => 'form-task' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit nil, :class => 'form-task' %>
+  </div>
+<% end %>

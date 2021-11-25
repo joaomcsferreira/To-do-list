@@ -1,0 +1,27 @@
+<div class="card-task">
+    <div class="">
+        <p class="card-text"><%= task.body %></p>
+    </div>
+
+    <div class="card-actions">
+        <div>
+            <% if task.done? %>
+            <div class="card-link card-check">
+                <%= link_to "#", data: { reflex: "click->TasksReflex#mark_incomplete", id: task.id } do %>
+                    <i class="fas fa-check"></i>
+                <% end %>
+            </div>
+            <% else %>
+            <div class="card-link card-exclamation">
+                <%= link_to "#", data: { reflex: "click->TasksReflex#mark_complete", id: task.id } do %>
+                    <i class="fas fa-exclamation"></i>
+                <% end %>
+            </div>
+            <% end %>
+        </div>
+
+        <div class="card-del">
+            <%= link_to "DELETE", task, method: :delete, data: { confirm: 'Are you sure?' }%>
+        </div>
+    </div>
+</div>
