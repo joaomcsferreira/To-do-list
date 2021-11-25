@@ -13,3 +13,60 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+    --font-sec: 'Playfair Display', serif;
+    --font-main: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-grey: #e5e5e5;
+    --color-grey-bold: #3C4043;
+    --color-light: #F5F5F5;
+    --color-background: #202124;
+    --color-success: rgb(44, 206, 52);
+    --color-danger: rgb(235, 30, 30);
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, 
+html {
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+}
+
+.footer {
+    padding: 3rem 0;
+    background-color: var(--color-grey-bold);
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-light);
+}
+
+.footer .brand {
+    font-family: var(--bs-font-playfair);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.footer .social-media {
+    margin-right: 2rem;
+    font-size: .8em;
+    text-align: left;
+}
+
+.footer .social-media li {
+    line-height: 1.1rem;
+}
+
+.footer .social-media .icon {
+    font-size: 1.4em;
+}
+
+.footer .social-media a{
+    color: var(--color-text-grey-bold);
+    text-decoration: none;
+}

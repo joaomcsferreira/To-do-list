@@ -8,9 +8,30 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-mutate-approach="sync"></script>
   </head>
 
   <body>
     <%= yield %>
+    <footer class="footer">
+        <div>
+            <span class="brand">To do list ©</span>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/joao-mcf/" target="_blank">
+                        <i class="fab fa-linkedin icon"></i> Linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Joao-MCF" target="_blank">
+                        <i class="fab fa-github icon"></i> Github
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>
