@@ -35,15 +35,15 @@ body,
 html {
     font-family: var(--font-main);
     background-color: var(--color-background);
+    height: 100%;
 }
 
 .footer {
-    padding: 3rem 0;
     background-color: var(--color-grey-bold);
-    margin-top: 0.7rem;
     display: flex;
     justify-content: space-between;
     color: var(--color-light);
+    padding: 3.75rem 0;
 }
 
 .footer .brand {
