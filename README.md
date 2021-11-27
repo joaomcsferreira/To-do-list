@@ -1,4 +1,4 @@
-# BLOG
+# To-do List
 
 Building a simple reactive to do list using stimulus reflex library.
 
