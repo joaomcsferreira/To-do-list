@@ -1,24 +1,50 @@
-# README
+# BLOG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building a simple reactive to do list using stimulus reflex library.
 
-Things you may want to cover:
+<table>
+  <tr>
+    <td>Ruby version</td>
+    <td>
+      3.0.2
+    </td>
+  </tr>
+  <tr>
+    <td>Rails version</td>
+    <td>
+      6.1.4.1
+    </td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>
+      PostgreSQLs
+    </td>
+  </tr>
+</table>
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+```bash
+# clone the project
+git clone https://github.com/Joao-MCF/To-do-list.git
 
-* Configuration
+# enter the cloned directory
+cd To-do-list
 
-* Database creation
+# install Ruby on Rails dependencies
+bundle install
 
-* Database initialization
+# install Node dependencies
+yarn install
 
-* How to run the test suite
+# create the development and test databases and the tables
+rails db:create && rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+# run the project
+rails s
+```
 
-* Deployment instructions
+## Author
 
-* ...
+João Marcos C. Ferreira - Code and Documentation [Linkedin](https://www.linkedin.com/in/joao-mcf/)
